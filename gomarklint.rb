@@ -5,21 +5,21 @@
 class Gomarklint < Formula
   desc "A fast, extensible Markdown linter written in Go"
   homepage "https://github.com/shinagawa-web/gomarklint"
-  version "3.0.1"
+  version "3.0.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/shinagawa-web/gomarklint/releases/download/v3.0.1/gomarklint_Darwin_x86_64.tar.gz"
-      sha256 "12fb642711c08a993a567a55566e4eb3ef4bd28d2f1e2ff725aaa10522025b2c"
+      url "https://github.com/shinagawa-web/gomarklint/releases/download/v3.0.2/gomarklint_Darwin_x86_64.tar.gz"
+      sha256 "189b7d4a187ee72eb45f8e96aa00c09d7a125945aab3cf111233fedbfe7b0dc7"
 
       define_method(:install) do
         bin.install "gomarklint"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/shinagawa-web/gomarklint/releases/download/v3.0.1/gomarklint_Darwin_arm64.tar.gz"
-      sha256 "ed0a5b9c06ae1ed53f6de2c79ae84d45090390c09154a06504a5b7e652e14b56"
+      url "https://github.com/shinagawa-web/gomarklint/releases/download/v3.0.2/gomarklint_Darwin_arm64.tar.gz"
+      sha256 "c375fc7c964825cf1c1ba20b7fd31b765547df5fa0865e2547f3f349f992a36d"
 
       define_method(:install) do
         bin.install "gomarklint"
@@ -29,15 +29,15 @@ class Gomarklint < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shinagawa-web/gomarklint/releases/download/v3.0.1/gomarklint_Linux_x86_64.tar.gz"
-      sha256 "278b9f6cff7cc0305c7e47fd6e3a9fc1e1388ac31dd6fc6a0d01824598fd1204"
+      url "https://github.com/shinagawa-web/gomarklint/releases/download/v3.0.2/gomarklint_Linux_x86_64.tar.gz"
+      sha256 "f654016a42d0ef8cced00dc26c455bf9889ffaf491476b0327e9750f015a4316"
       define_method(:install) do
         bin.install "gomarklint"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shinagawa-web/gomarklint/releases/download/v3.0.1/gomarklint_Linux_arm64.tar.gz"
-      sha256 "2f7718ae0f66f99f3dabda15bb73c9d0b49a3620ea966a6e190c61c4c3d5c6ad"
+      url "https://github.com/shinagawa-web/gomarklint/releases/download/v3.0.2/gomarklint_Linux_arm64.tar.gz"
+      sha256 "065b391be6a15830cf0a77ad9f96a25ab44dbc5abe965c0977a21d7d589dbf0e"
       define_method(:install) do
         bin.install "gomarklint"
       end
