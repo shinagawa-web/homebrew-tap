@@ -1,26 +1,26 @@
 class Colref < Formula
   desc "Check whether a database column is still referenced in your codebase before you delete it"
   homepage "https://github.com/shinagawa-web/colref"
-  version "0.7.8"
+  version "0.7.9"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/shinagawa-web/colref/releases/download/v0.7.8/colref_0.7.8_darwin_arm64.tar.gz"
-      sha256 "17bb710897922ddaa5f9f6a7947f934841ec236b2b1ee2c3b9c40088bf77547b"
+      url "https://github.com/shinagawa-web/colref/releases/download/v0.7.9/colref_0.7.9_darwin_arm64.tar.gz"
+      sha256 "548f009a2c72298f02279902fcef4ba9e8b2d7320356e1e7d20d9c272e732107"
     else
-      url "https://github.com/shinagawa-web/colref/releases/download/v0.7.8/colref_0.7.8_darwin_amd64.tar.gz"
-      sha256 "16f55a4543bf66f8fb04801e08dc420e7150f538a269c257e4b5505eac7a0ba9"
+      url "https://github.com/shinagawa-web/colref/releases/download/v0.7.9/colref_0.7.9_darwin_amd64.tar.gz"
+      sha256 "e8ebd99db6e48644c06f50093f81856c44d7c1310f897b22914a5ff95542dfd3"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/shinagawa-web/colref/releases/download/v0.7.8/colref_0.7.8_linux_arm64.tar.gz"
-      sha256 "765c4d24efe390dcfcda76193a7a732ff03ccf8c7bb548810096af47f0dc7f54"
+      url "https://github.com/shinagawa-web/colref/releases/download/v0.7.9/colref_0.7.9_linux_arm64.tar.gz"
+      sha256 "96633ad7c55adb1984913e927e59bcec4645cb0a1cf8844f8a63aaf6e2b756c9"
     else
-      url "https://github.com/shinagawa-web/colref/releases/download/v0.7.8/colref_0.7.8_linux_amd64.tar.gz"
-      sha256 "056e9a653825d3312bf593a81ab5f56fcb1b021742cccd304656f5c00188a6cf"
+      url "https://github.com/shinagawa-web/colref/releases/download/v0.7.9/colref_0.7.9_linux_amd64.tar.gz"
+      sha256 "be915a307fa7a9d0e6d28df9e847e4bd166c1340530395ecd6221939f2b98b07"
     end
   end
 
