@@ -5,21 +5,21 @@
 class Pgincident < Formula
   desc "Real-time PostgreSQL incident dashboard for the terminal"
   homepage "https://github.com/shinagawa-web/pgincident"
-  version "0.5.1"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/shinagawa-web/pgincident/releases/download/v0.5.1/pgincident_0.5.1_darwin_amd64.tar.gz"
-      sha256 "f4c105fbb3cb3417b8a89c890e1b8538d0681e0c0746faa71a2d109246f702d7"
+      url "https://github.com/shinagawa-web/pgincident/releases/download/v0.6.0/pgincident_0.6.0_darwin_amd64.tar.gz"
+      sha256 "c5e25267b0333bd100baa865da591ddcecc6cb5d8d2a7dc2ff07ed83403c3ee5"
 
       define_method(:install) do
         bin.install "pgincident"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/shinagawa-web/pgincident/releases/download/v0.5.1/pgincident_0.5.1_darwin_arm64.tar.gz"
-      sha256 "f1ef9aafc7308be7fe95e6da714a72c6d0cf284ba1990bd424b38281e1084e19"
+      url "https://github.com/shinagawa-web/pgincident/releases/download/v0.6.0/pgincident_0.6.0_darwin_arm64.tar.gz"
+      sha256 "86d8e08a4cfe38179200c977cb6dd5f2dabbff615a4ee1f7b82a1f46c3999763"
 
       define_method(:install) do
         bin.install "pgincident"
@@ -29,15 +29,15 @@ class Pgincident < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shinagawa-web/pgincident/releases/download/v0.5.1/pgincident_0.5.1_linux_amd64.tar.gz"
-      sha256 "d9e607e44a845593527a45834fe4001f9b382c4476236fb0c8b78366f8a9b110"
+      url "https://github.com/shinagawa-web/pgincident/releases/download/v0.6.0/pgincident_0.6.0_linux_amd64.tar.gz"
+      sha256 "de8cc11a68f58c5e514a05cce0e8f3d56bb11d0bb311bfc05e58de74e9a709b8"
       define_method(:install) do
         bin.install "pgincident"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shinagawa-web/pgincident/releases/download/v0.5.1/pgincident_0.5.1_linux_arm64.tar.gz"
-      sha256 "2230c34ae298326ffc4517c1e50951a49f24a9d4f2b0445cd80132f1e7f6323b"
+      url "https://github.com/shinagawa-web/pgincident/releases/download/v0.6.0/pgincident_0.6.0_linux_arm64.tar.gz"
+      sha256 "9720192f029f4eb07dc6a4de962869ae54cd4354cd90388655d105e826a7c135"
       define_method(:install) do
         bin.install "pgincident"
       end
